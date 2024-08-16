@@ -18,7 +18,7 @@
         <h2>Installation</h2>
         <p>Clone the repository and navigate into the project directory:</p>
         <code>git clone https://github.com/naresy/QuantexaAssignment.git
-            <br>cd QuantexaAssignment</code>
+        <br>cd QuantexaAssignment</code>
     </section>
     <section>
         <h2>Project Structure</h2>
