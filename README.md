@@ -1,7 +1,4 @@
-<title>Quantexa Assignment</title>
-</head>
-<body>
-    <header>
+<header>
         <h1>Quantexa Assignment Project</h1>
     </header>
     <section>
