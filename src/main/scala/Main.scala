@@ -3,6 +3,8 @@ package com.naresh.spark
 import org.apache.spark.sql.SparkSession
 import FlightStatistics._
 
+import java.sql.Date
+
 object Main {
   def main(args: Array[String]): Unit = {
     // Initialize SparkSession
@@ -14,26 +16,19 @@ object Main {
 
 
     // Load the data using DataLoader
-    val flightData = DataLoader.loadFlightData(spark, "./src/main/resources/flightData.csv")
-    val passengers = DataLoader.loadPassengerData(spark, "./src/main/resources/passengers.csv")
-
+    val flightData = DataLoader.loadDataInDF(spark, "./src/main/resources/flightData.csv")
+    val passengers = DataLoader.loadDataInDF(spark, "./src/main/resources/passengers.csv")
     // Calculate statistics using FlightStatistics
-    val flightsPerMonth = calculateFlightsPerMonth(flightData)
-    flightsPerMonth.show()
+//    displayFlightsPerMonthOnConsole(flightData)
+// displayFrequentFlyersOnConsole(flightData, passengers)
+//displayCountryVisitsOnConsole(flightData)
+//displayFlightsTogetherOnConsole(flightData)
 
-    val frequentFlyers = findFrequentFlyers(flightData, passengers)
-    frequentFlyers.show()
+    val fromDate = Date.valueOf("2017-01-01")
+    val toDate = Date.valueOf("2017-12-31")
 
-    val countryVisits = calculateCountryVisits(flightData)
-    countryVisits.show()
-
-    val flightsTogether = calculateFlightsTogether(flightData)
-    flightsTogether.show()
-
-    val flightsTogetherWithinDate = flownTogether(3, "2017-01-01", "2017-12-31", flightData)
+    val flightsTogetherWithinDate = flownTogether(3, fromDate, toDate, flightData, spark)
     flightsTogetherWithinDate.show()
 
-    // Stop the Spark session
-    spark.stop()
   }
 }
