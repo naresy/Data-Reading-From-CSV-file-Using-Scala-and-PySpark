@@ -19,7 +19,9 @@
 <section>
 <h2>Installation</h2>
 <p>Clone the repository and navigate into the project directory:</p>
-<pre><code>git clone https://github.com/naresy/QuantexaAssignment.git<br>cd QuantexaAssignment</code></pre>
+<pre><code>git clone https://github.com/naresy/QuantexaAssignment.git
+  <br>
+  cd QuantexaAssignment</code></pre>
 </section>
 <section>
 <h2>Project Structure</h2>
@@ -47,67 +49,52 @@ libraryDependencies ++= Seq(
 </section>
 
 <section>
-        <h2>Usage</h2>
-        <p>Run the project with SBT:</p>
-        <pre><code>sbt run</code></pre>
-        <p>This will calculate the statistics and save them as text files in the output directory.</p>
-    </section>
+  <h2>Usage</h2>
+  <p>Run the project with SBT:</p>
+  <pre><code>sbt run</code></pre>
+  <p>This will calculate the statistics and save them as text files in the output directory.</p>
+</section>
 
-    <section>
-        <h2>Example Data</h2>
-        <p>Place your CSV files in the <code>src/main/resources/</code> directory. Example data includes:</p>
-        <ul>
-            <li><code>flights.csv</code> - Contains flight information.</li>
-            <li><code>passengers.csv</code> - Contains passenger information.</li>
-        </ul>
-    </section>
+<section>
+<h2>Example Data</h2>
+<p>Place your CSV files in the <code>src/main/resources/</code> directory. Example data includes:</p>
+<ul>
+<li><code>flights.csv</code> - Contains flight information.</li>
+<li><code>passengers.csv</code> - Contains passenger information.</li>
+</ul>
+</section>
+<section>
+<h2>Extending the Project</h2>
+<p>To extend the project:</p>
+  <ol>
+  <li>Add new data processing modules in the <code>src/main/scala/</code> directory.</li>
+  <li>Update the <code>Main.scala</code> file to include the new module in the processing pipeline.</li>
+  <li>Ensure any new dependencies are added to <code>build.sbt</code>.</li>
+  </ol>
+  </section>
 
-    <section>
-        <h2>Output</h2>
-        <p>The generated statistics will be saved in the <code>output/</code> directory. These may include:</p>
-        <ul>
-            <li><code>flights_per_month.txt</code></li>
-            <li><code>frequent_flyers.txt</code></li>
-            <li><code>country_visits.txt</code></li>
-        </ul>
-    </section>
+<section>
+<h2>Troubleshooting</h2>
+<ul>
+<li>Ensure that all prerequisites are installed and correctly configured.</li>
+<li>If you encounter memory issues, consider increasing the driver's memory allocation with <code>--driver-memory</code> in your SBT run command.</li>
+</ul>
+</section>
+<section>
+<h2>License</h2>
+<p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
+</section>
+<section>
+<h2>Acknowledgments</h2>
+<p>Thanks to Quantexa for the assignment opportunity.
+  <br>
+Apache Spark for providing the processing framework.</p>
+</section>
+<section>
+<h2>Contact</h2>
+<p>For any issues or queries, contact Naresh at <a href="mailto:info.naresh74@gmail.com">info.naresh74@gmail.com</a>.</p>
+</section>
+<footer>
+<p>&copy; 2024. All rights reserved.</p>
+</footer>
 
-    <section>
-        <h2>Extending the Project</h2>
-        <p>To extend the project:</p>
-        <ol>
-            <li>Add new data processing modules in the <code>src/main/scala/</code> directory.</li>
-            <li>Update the <code>Main.scala</code> file to include the new module in the processing pipeline.</li>
-            <li>Ensure any new dependencies are added to <code>build.sbt</code>.</li>
-        </ol>
-    </section>
-
-    <section>
-        <h2>Troubleshooting</h2>
-        <ul>
-            <li>Ensure that all prerequisites are installed and correctly configured.</li>
-            <li>If you encounter memory issues, consider increasing the driver's memory allocation with <code>--driver-memory</code> in your SBT run command.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>License</h2>
-        <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
-    </section>
-
-    <section>
-        <h2>Acknowledgments</h2>
-        <p>Thanks to Quantexa for the assignment opportunity.<br>
-        Apache Spark for providing the processing framework.</p>
-    </section>
-
-    <section>
-        <h2>Contact</h2>
-        <p>For any issues or queries, contact Naresh at <a href="mailto:naresh@example.com">naresh@example.com</a>.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024. All rights reserved.</p>
-    </footer>
-</body>
-</html>
