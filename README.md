@@ -94,6 +94,18 @@ Apache Spark for providing the processing framework.</p>
 <h2>Contact</h2>
 <p>For any issues or queries, contact Naresh at <a href="mailto:info.naresh74@gmail.com">info.naresh74@gmail.com</a>.</p>
 </section>
+<section>
+<h2>Screenshots</h2>
+<p>Here are some screenshots of the project in action:</p>
+  <figure>
+            <img src="screenshots/data_processing.png" alt="Data Processing Screenshot" width="600">
+            <figcaption>Screenshot of the data processing pipeline.</figcaption>
+</figure>
+<figure>
+            <img src="screenshots/output_example.png" alt="Output Example Screenshot" width="600">
+            <figcaption>Screenshot of the generated output statistics.</figcaption>
+</figure>
+</section>
 <footer>
 <p>&copy; 2024. All rights reserved.</p>
 </footer>
