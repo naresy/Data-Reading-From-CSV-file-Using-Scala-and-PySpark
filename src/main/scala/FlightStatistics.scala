@@ -51,6 +51,7 @@ object FlightStatistics {
 
   }
 
+  //Question 4 calculation
   def displayFlightsTogetherOnConsole(flightDF: DataFrame) {
     passangersFlightTogetherDFUtility(flightDF, 3).
       select(col("df1.passengerId").alias("Passenger 1 ID"),
@@ -60,7 +61,7 @@ object FlightStatistics {
 
 
 
-
+  //Extra credit calculation
   def displayFlightsTogetherWithDateRangeOnConsole(atLeastNTimes: Int, from: Date, to: Date, flightDF: DataFrame, spark: SparkSession): DataFrame = {
     // Convert SQL Date to String for filtering
     val fromStr = from.toString
