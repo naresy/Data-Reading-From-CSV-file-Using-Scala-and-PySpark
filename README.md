@@ -95,17 +95,17 @@ Apache Spark for providing the processing framework.</p>
 <p>For any issues or queries, contact Naresh at <a href="mailto:info.naresh74@gmail.com">info.naresh74@gmail.com</a>.</p>
 </section>
 <section>
+<section>
 <h2>Screenshots</h2>
-<p>Here are some screenshots of the project in action:</p>
-  <figure>
-            <img src="screenshots/data_processing.png" alt="Data Processing Screenshot" width="600">
-            <figcaption>Screenshot of the data processing pipeline.</figcaption>
-</figure>
-<figure>
-            <img src="screenshots/output_example.png" alt="Output Example Screenshot" width="600">
-            <figcaption>Screenshot of the generated output statistics.</figcaption>
-</figure>
-</section>
+<p>Here are the come screen Shot of the Outpu</p>
+
+<p align="center">
+  <img src="https://github.com/naresy/QuantexaAssignment/blob/master/sc1.png?text=Screenshot+1" alt="Screenshot 1" width="300"/>
+  <img src="https://github.com/naresy/QuantexaAssignment/blob/master/sc2.png?text=Screenshot+2" alt="Screenshot 2" width="300"/>
+  <img src="https://github.com/naresy/QuantexaAssignment/blob/master/sc3.png?text=Screenshot+3" alt="Screenshot 3" width="300"/>
+   <img src="https://github.com/naresy/QuantexaAssignment/blob/master/sc3.png?text=Screenshot+3" alt="Screenshot 3" width="300"/>
+   <img src="https://github.com/naresy/QuantexaAssignment/blob/master/sc3.png?text=Screenshot+3" alt="Screenshot 3" width="300"/>
+</p>
 <footer>
 <p>&copy; 2024. All rights reserved.</p>
 </footer>
