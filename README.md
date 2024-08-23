@@ -1,5 +1,5 @@
 <header>
-<h1>Quantexa Assignment Project</h1>
+<h1>Data Reading From CSV file Using Scala and PySpark</h1>
 </header>
 
 <section>
@@ -19,9 +19,9 @@
 <section>
 <h2>Installation</h2>
 <p>Clone the repository and navigate into the project directory:</p>
-<pre><code>git clone https://github.com/naresy/QuantexaAssignment.git
+<pre><code>git clone https://github.com/naresy/Data-Reading-From-CSV-file-Using-Scala-and-PySpark.git
   <br>
-  cd QuantexaAssignment</code></pre>
+  cd Data-Reading-From-CSV-file-Using-Scala-and-PySpark</code></pre>
 </section>
 <section>
 <h2>Project Structure</h2>
