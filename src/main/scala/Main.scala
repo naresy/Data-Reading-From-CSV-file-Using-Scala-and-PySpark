@@ -18,16 +18,19 @@ object Main {
     // Load the data using DataLoader
     val flightData = DataLoader.loadDataInDF(spark, "./src/main/resources/flightData.csv")
     val passengers = DataLoader.loadDataInDF(spark, "./src/main/resources/passengers.csv")
-    // Calculate statistics using FlightStatistics
-//    displayFlightsPerMonthOnConsole(flightData)
-// displayFrequentFlyersOnConsole(flightData, passengers)
-//displayCountryVisitsOnConsole(flightData)
-//displayFlightsTogetherOnConsole(flightData)
-
+    // Display Question 1 Result onConsole
+   displayFlightsPerMonthOnConsole(flightData)
+    // Display Question 2 Result onConsole
+ displayFrequentFlyersOnConsole(flightData, passengers)
+    // Display Question 3 Result onConsole
+displayCountryVisitsOnConsole(flightData)
+    // Display Question 4 Result onConsole
+displayFlightsTogetherOnConsole(flightData)
+//Display Extra Credit Question Result onConsole
+//    I assume number of counter is 3 and two random date
     val fromDate = Date.valueOf("2017-01-01")
     val toDate = Date.valueOf("2017-12-31")
-
-    val flightsTogetherWithinDate = flownTogether(3, fromDate, toDate, flightData, spark)
+    val flightsTogetherWithinDate = displayFlightsTogetherWithDateRangeOnConsole(3, fromDate, toDate, flightData, spark)
     flightsTogetherWithinDate.show()
 
   }
