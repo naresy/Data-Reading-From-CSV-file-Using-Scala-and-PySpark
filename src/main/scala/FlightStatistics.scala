@@ -12,6 +12,7 @@ object FlightStatistics {
     // Extracting month from date and doing grp by on month
     // Here i am assuming that i have  data of single year.
     // In case of multiple years of data we will have to use yyyy-MM as a format for month
+//    Qn1.Find the total number of flights for each month.
     flightDF
       .withColumn("Month", month(col("date")))
       .groupBy("Month")
@@ -22,7 +23,7 @@ object FlightStatistics {
     flightDF.show()
 
   }
-
+//  Qn2.Find the names of the 100 most frequent flyers.
   //Question 2 calculation
   def displayFrequentFlyersOnConsole(flightDF: DataFrame, passengersDF: DataFrame) {
     val flightPassengersCountDF = flightDF.groupBy("passengerId").agg(count("flightId").
@@ -36,7 +37,8 @@ object FlightStatistics {
      select("passengerId", "Number of Flights","firstName","lastName").
      orderBy(desc("Number of Flights")).show()
   }
-
+//  Qn3.Find the greatest number of countries a passenger has been in without being in the UK. For example,
+//  if the countries a passenger was in were: UK -> FR -> US -> CN -> UK -> DE -> UK, the correct answer would be 3 countries.
   //Question 3 calculation
   def displayCountryVisitsOnConsole(flightDF: DataFrame)
                                     {
@@ -50,7 +52,7 @@ object FlightStatistics {
     maxRunPasengerDF.orderBy(col("Longest Run").desc).show()
 
   }
-
+//  Qn4.Find the passengers who have been on more than 3 flights together.
   //Question 4 calculation
   def displayFlightsTogetherOnConsole(flightDF: DataFrame) {
     passangersFlightTogetherDFUtility(flightDF, 3).
@@ -60,8 +62,8 @@ object FlightStatistics {
 
 
 
-
-  //Extra credit calculation
+//   Qn5.Find the passengers who have been on more than N flights together within the range (from,to).
+//  //Qn5 Calculation
   def displayFlightsTogetherWithDateRangeOnConsole(atLeastNTimes: Int, from: Date, to: Date, flightDF: DataFrame, spark: SparkSession): DataFrame = {
     // Convert SQL Date to String for filtering
     val fromStr = from.toString
