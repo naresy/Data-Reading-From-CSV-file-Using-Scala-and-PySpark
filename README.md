@@ -93,12 +93,12 @@ Apache Spark for providing the processing framework.</p>
 <section>
 <h2>Contact</h2>
 <p>For any issues or queries, contact Naresh at <a href="mailto:info.naresh74@gmail.com">info.naresh74@gmail.com</a>.</p>
-<li>GitHub: <a href="https://github.com/naresy/QuantexaAssignment.git" target="_blank">https://github.com/naresy/QuantexaAssignment.git</a></li>
+<li>GitHub: <a href="https://github.com/naresy/QuantexaAssignment.git" target="_blank">https://github.com/naresy/Data-Reading-From-CSV-file-Using-Scala-and-PySpark.git</a></li>
 </section>
 <section>
 <section>
 <h2>Screenshots</h2>
-<p>Here are the some screen Shot of the Outpu</p>
+<p>Here are some screen Shot of the Outpu</p>
 
 <p align="center">
   <img src="https://github.com/naresy/QuantexaAssignment/blob/master/sc1.png?text=Screenshot+1" alt="Screenshot 1" width="300"/>
